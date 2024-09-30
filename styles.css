@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    width: 1500px;
+    margin: 0 auto;
+       
+}
+
+.sidebar {
+    display: flex;
+    height: 100vh;
+    width: 40%;
+}
+
+.image-background {
+    display: block;
+    max-width: 100%;
+}
+
+.main {
+    background-color: rgb(167, 157, 143);
+    width: 60%;
+
+}
