@@ -9,21 +9,54 @@
 <body>
   <div id="container">
     <div class="sidebar">
-        <img class="image-background" src="./images/image-background.jpg">
-        <!--   <div class="logo">
-                <img class="image-logo" src="./images/image-logo.png">
-
-           </div> --> 
+      <div class="logo">
+        <img class="logo-image" src="./images/image-logo.png" alt="logo">
+        <h1 class="logo-title">Odin</h1>
+      </div> 
     </div>
     <div class="main">
-        <div class="part-one">
-        <!--    <p>This is not a real online service! You know you need something like this 
+        <div class="text-first">
+            <p>This is not a real online service! You know you need something like this 
             in your life to help you realize your deepest dreams.</p>
             <p>Sign up now to get started.</p>
-            <p>You know you want to.</p> -->
+            <p>You know you want to.</p>
         </div>
-        <div class="part-two"></div>
-        <div class="part-three"></div>    
+        <form class="form">
+          <div class="form-first">
+            <p class="form-title">Let's do this!</p>
+            <div class="input">
+              <label for="first-name">First name</label>
+              <input type="text" name="first-name" id="first-name" required>
+            </div>
+            <div class="input">
+              <label for="last-name">Last name</label>
+              <input type="text" name="last-name" id="last-name" required>
+            </div>
+            <div class="input">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required>
+            </div>
+            <div class="input">
+              <label for="phone-number">Phone number</label>
+              <input type="text" name="phone-number" id="phone-number" minlength="9" maxlength="9">
+            </div>
+            <div class="input">
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" required>
+            </div>
+            <div class="input">
+              <label for="confirm-password">Confirm password</label>
+              <input type="password" name="confirm-password" id="confirm-password" required>
+            </div>
+          </div>
+          <div class="form-button">
+            <button type="submit">Create account</button>
+          </div>
+        </form>
+        <div class="text-last">
+          <p>Already have an account?</p>
+          <a href="#">Log in</a>
+        </div>    
     </div>
   </div>  
 </body>

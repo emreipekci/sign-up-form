@@ -1,3 +1,9 @@
+:root {
+    --color: rgb(241, 242, 253);
+    --textcolor : rgb(41, 47, 121);
+    --font : 'Lucida Sans', Verdana, sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,26 +12,96 @@
 
 #container {
     display: flex;
-    justify-content: center;
-    align-items: center;   
-    width: 1500px;
-    margin: 0 auto;
-       
+    flex-flow: row wrap;
+    width: 100vw;
+    height: 100vh;   
 }
 
 .sidebar {
-    display: flex;
-    height: 100vh;
-    width: 40%;
+    background-image: url(./images/image-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40vw;
 }
 
-.image-background {
+.logo {
+    background-color: rgba(221, 101, 65, 0.5);
+    height: auto;
+    position: relative;
+    top: 20vh;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+}
+
+.logo-image {
+    max-height: 100px;
+}
+
+.logo-title {
     display: block;
-    max-width: 100%;
+    font-size: 30px;
+    color: rgba(221, 101, 65);
+    font-family: var(--font);
+    text-transform: uppercase;
 }
 
 .main {
-    background-color: rgb(167, 157, 143);
-    width: 60%;
+    background-color: var(--color);
+    width: 60vw;
+    color: var(--textcolor);
+    padding-left: 3vw;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15vh;
+}
 
+.text-first {
+    margin-top: 20vh;
+    line-height: 1.5;
+    width: 80%;
+}
+
+.input {
+    display: flex;
+    flex-flow: column wrap;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    width: 40%;  
+}
+
+.form-title {
+    width: 100%;
+    font-weight: 800;    
+}
+
+.form-first {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 30px;
+    width: 80%;
+}
+
+button {
+    margin: 40px 0;
+    padding: 10px 40px;
+    border: 2px solid rgba(221, 101, 65, 0.5);
+    font-size: 1rem;
+    font-weight: 800;
+    color: rgba(221, 101, 65);
+}
+
+.text-last {
+    display: flex;
+    gap: 5px;
+}
+
+.text-last a {
+    color: rgba(221, 101, 65, 0.5);
+    font-weight: 700;
+    text-decoration: none;
 }
