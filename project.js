@@ -15,7 +15,7 @@ function imageSwap() {
       toggleOpacity();
     }
     imageSwap();
-  }, 3000);
+  }, 5000);
 }
 
 toggleOpacity();

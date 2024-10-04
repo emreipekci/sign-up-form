@@ -1,6 +1,6 @@
 :root {
-    --color: rgb(241, 242, 253);
-    --textcolor : rgb(41, 47, 121);
+    --background-color: rgb(241, 242, 253);
+    --text-color : rgb(52, 52, 53);
     --font : 'Lucida Sans', Verdana, sans-serif;
 }
 
@@ -30,43 +30,57 @@
     transition: opacity 1s ease;
 }
 
-.logo {
-    background-color: rgba(221, 101, 65, 0.5);
-    height: auto;
-    position: relative;
-    top: 20vh;
-    padding: 15px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1vh;
-}
-
 .logo-image {
-    max-height: 100px;
+    height: 7vh;     
 }
 
-.logo-title {
-    display: block;
-    font-size: 30px;
-    color: rgba(221, 101, 65);
+.logo {
+    position: absolute;
+    bottom: 15%;
+    background-color: hsla(180, 1%, 28%, 0.4);
+    width: 40vw;
+    height: 8vh;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.credit {
+    position: absolute;
+    bottom: 2%;
+    width: 40vw;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.credit p, 
+.credit a {
+    color: hsl(208, 100%, 97%, 0.8);
+}
+
+.logo h1 {
+    font-size: 40px;
     font-family: var(--font);
     text-transform: uppercase;
+    color: aliceblue;
+    letter-spacing: 0.2rem;
 }
 
 .main {
-    background-color: var(--color);
+    background-color: var(--background-color);
     width: 60vw;
-    color: var(--textcolor);
+    color: var(--text-color);
     padding-left: 3vw;
     font-size: 1.2rem;
     display: flex;
     flex-direction: column;
-    gap: 15vh;
+    gap: 10vh;
 }
 
 .text-first {
-    margin-top: 20vh;
+    margin-top: 10vh;
     line-height: 1.5;
     width: 80%;
 }
@@ -91,8 +105,8 @@ input:invalid {
 }
 
 input:focus {
-    outline: 1px solid var(--textcolor);
-    border-color: var(--textcolor);
+    outline: 1px solid var(--text-color);
+    border-color: var(--text-color);
 }
 
 .form-title {
@@ -117,13 +131,23 @@ button {
     color: rgba(221, 101, 65);
 }
 
+a {
+    color: rgba(221, 101, 65); 
+}
+
 .text-last {
     display: flex;
     gap: 5px;
 }
 
-.text-last a {
-    color: rgba(221, 101, 65, 0.5);
-    font-weight: 700;
-    text-decoration: none;
+.footer p, 
+.footer a {
+    font-size: 1rem;
+    color: var(--font);
 }
+
+.footer {
+    position: absolute;
+    bottom: 2%;
+}
+
