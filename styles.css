@@ -124,6 +124,7 @@ input:focus {
 button {
     margin: 40px 0;
     padding: 10px 40px;
+    min-width: 120px;
     border: 2px solid rgba(221, 101, 65, 0.5);
     border-radius: 2px;
     font-size: 1rem;
@@ -150,4 +151,88 @@ a {
     position: absolute;
     bottom: 2%;
 }
+
+@media (max-width: 600px) {
+    .main {
+        font-size: 0.9rem;
+        gap: 3vh;
+    }
+
+    button {
+        margin: 20px 0;
+        padding: 5px 10px;
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    .form-first div {
+        font-size: 0.6rem;
+    }
+
+    .credit {
+        font-size: 0.8rem;
+    }
+
+    .footer p, 
+    .footer a {
+    font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .main {
+        font-size: 0.8rem;
+        gap: 1vh;
+    }
+
+    #container {
+        flex-flow: column wrap;
+    }
+
+    .sidebar {
+        width: 100vw;
+        height: 30%;
+    }
+
+    .main {
+        width: 100vw;
+        height: 70%;
+    }
+
+    .form-first {
+        gap: 15px;
+    }
+
+    .text-first {
+        margin-top: 5vh;
+    }
+
+    input {
+        width: 80%;
+    }
+
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    .credit {
+        width: 60vw; 
+    }
+
+    .credit {
+        font-size: 0.7rem;
+    }
+
+    .footer p, 
+    .footer a {
+    font-size: 0.7rem;
+    }
+}
+
+
 
