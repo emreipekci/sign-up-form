@@ -70,6 +70,7 @@
 }
 
 .main {
+    padding-top: 10vh;
     background-color: var(--background-color);
     width: 60vw;
     color: var(--text-color);
@@ -177,6 +178,7 @@ button {
 @media (max-width: 425px) {
 
     .main {
+        padding-top: 5vh;
         font-size: 0.8rem;
         gap: 1vh;
     }
