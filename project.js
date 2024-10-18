@@ -20,3 +20,28 @@ function imageSwap() {
 
 toggleOpacity();
 imageSwap();
+
+document.getElementById("form").addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  var passwordInput = document.getElementById('password');
+  var confirmPasswordInput = document.getElementById('confirm-password');
+
+  var password = passwordInput.value;
+  var confirmPassword = confirmPasswordInput.value;
+  var errorMessage = document.getElementById("error-message");
+
+  if(password !== confirmPassword) {
+    errorMessage.style.display = "block";
+  } else {
+    errorMessage.style.display = "none";
+
+    var inputs = document.querySelectorAll('input');
+        inputs.forEach(function(input) {
+            input.value = ""; 
+        });
+
+    alert("Form submitted.")
+  }
+
+});

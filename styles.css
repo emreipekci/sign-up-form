@@ -14,8 +14,8 @@
 #container {
     display: flex;
     flex-flow: row wrap;
-    width: 100vw;
-    height: 100%;  
+    min-width: 100vw;
+    min-height: 100vh; 
 }
 
 .sidebar {
@@ -106,10 +106,6 @@ input {
     max-width: 50%;
 }
 
-input:invalid {
-    border-color: red;
-}
-
 input:focus {
     outline: 1px solid var(--text-color);
     border-color: var(--text-color);
@@ -128,7 +124,7 @@ input:focus {
 }
 
 button {
-    margin: 40px 0;
+    margin-top: 80px;
     padding: 10px 40px;
     min-width: 120px;
     border: 2px solid rgba(221, 101, 65, 0.5);
@@ -140,6 +136,10 @@ button {
 
 .last a {
     color: var(--color); 
+}
+
+.last {
+    margin-top: 0;
 }
 
 .source {
@@ -156,6 +156,7 @@ button {
     .main {
         font-size: 0.9rem;
         gap: 3vh;
+        height: auto;
     }
 
     button {
@@ -179,11 +180,10 @@ button {
 }
 
 @media (max-width: 425px) {
-
     .main {
         padding-top: 1vh;
         font-size: 0.8rem;    
-        height: 70vh; 
+        height: auto; 
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -195,9 +195,7 @@ button {
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 100%;
-        
-        
+        height: 100%;   
     }
 
     .sidebar {
@@ -224,9 +222,9 @@ button {
 }
 
 @media (min-width: 1024px) {
-
     .main {
         font-size: 1.4rem;
+        height: auto;
     }
 
     .form-first div {
